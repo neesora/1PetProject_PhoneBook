@@ -1,11 +1,8 @@
-def main():
-	x,y =3,21	
-	if(x < y):
-		st= "x is less than y"	
-	elif (x == y):
-		st= "x is same as y"	
-	else:
-		st="x is greater than y"
-	print(st)	
-if __name__ == "__main__":
-	main()
+def check_number(num):
+    if num > 0:
+        print('Number is positive')
+    elif num < 0:
+        print('Number is negative')
+    elif num == 0:
+        print('Number is zero')
+input(float(check_number))
