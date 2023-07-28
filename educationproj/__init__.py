@@ -1,8 +1,9 @@
-def check_number(num):
-    if num > 0:
-        print('Number is positive')
-    elif num < 0:
-        print('Number is negative')
-    elif num == 0:
-        print('Number is zero')
-input(float(check_number))
+def main():
+	x,y =2,8
+	
+	if(x < y):
+		st= "x is less than y"
+	print(st)
+	
+if __name__ == "__main__":
+	main()
