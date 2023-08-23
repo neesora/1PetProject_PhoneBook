@@ -45,5 +45,7 @@ def main():
             print(phone_book)
         if choice == "5":
             break
+        else:
+            print("That's option isn't exist.")
 if __name__ == "__main__":
     main()
