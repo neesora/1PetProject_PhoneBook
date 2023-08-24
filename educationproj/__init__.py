@@ -52,6 +52,7 @@ def main():
             delete_contact()
         if choice == "4":
             print(phone_book)
+            #show_contacts()
         if choice == "5":
             break
         else:
