@@ -49,7 +49,7 @@ def main():
         if choice == "3":
             delete_contact()
         if choice == "4":
-            show_contacts()
+            print(phone_book)
         if choice == "5":
             break
         else:
