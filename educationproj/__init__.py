@@ -34,7 +34,7 @@ def delete_contact():
 
 def main():
     while True:
-        print("Phone book")
+        print("Phone book") #make \n for pretty code
         print("-------------------------")
         print("Write 1 to add new contact.")
         print("Write 2 to modify exist contact.")
