@@ -8,9 +8,15 @@ def add_contact():
 
 def modify_contact():
     name = input("Write the exist name of contact which will edit: ")
+    while name == "":
+        name = input("Write something")
     if name in phone_book:
-        nickname = input("Write new nickname: ") #There have bug when you skip it than crash
+        nickname = input("Write new nickname: ")
+        while nickname == "":
+            break
         number = input("Write new number: ")
+        while number == "":
+            break
     modifying = phone_book[name] #this block needed for replacement exist values to new values
     if nickname:
         modifying["Nickname"] = nickname
@@ -25,6 +31,7 @@ def delete_contact():
     else:
         print("Contact was not found")
 #def show_contacts():
+
 
 def main():
     while True:
@@ -42,7 +49,7 @@ def main():
         if choice == "3":
             delete_contact()
         if choice == "4":
-            print(phone_book)
+            show_contacts()
         if choice == "5":
             break
         else:
