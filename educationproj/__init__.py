@@ -10,6 +10,8 @@ def modify_contact():
     name = input("Write the exist name of contact which will edit: ")
     while name == "":
         name = input("Write something")
+    else:
+        print("Contact was not found")
     if name in phone_book:
         nickname = input("Write new nickname: ")
         while nickname == "":
@@ -22,15 +24,13 @@ def modify_contact():
         modifying["Nickname"] = nickname
     if number:
         modifying["Number"] = number
-    else:
-        print("Contact was not found")
 def delete_contact():
     name = input("Write the exist name of contact which will delete: ")
     if name in phone_book:
         del phone_book[name]
     else:
         print("Contact was not found")
-#def show_contacts():
+#def show_contacts(): work for tomorrow
 
 
 def main():
@@ -50,9 +50,8 @@ def main():
             modify_contact()
         if choice == "3":
             delete_contact()
-        if choice == "4":
-            print(phone_book)
-            #show_contacts()
+        #if choice == "4": That's don't work I need to create function for showing contact
+            #print(phone_book)
         if choice == "5":
             break
         else:
