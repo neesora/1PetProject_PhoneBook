@@ -30,7 +30,6 @@ def delete_contact():
         del phone_book[name]
     else:
         print("Contact was not found")
-#def show_contacts(): work for tomorrow
 
 
 def main():
@@ -46,13 +45,13 @@ def main():
         choice = input("Enter choice: ")
         if choice == "1":
             add_contact()
-        if choice == "2":
+        elif choice == "2":
             modify_contact()
-        if choice == "3":
+        elif choice == "3":
             delete_contact()
-        #if choice == "4": That's don't work I need to create function for showing contact
-            #print(phone_book)
-        if choice == "5":
+        elif choice == "4": 
+            print(phone_book)
+        elif choice == "5":
             break
         else:
             print("That's option isn't exist.")
