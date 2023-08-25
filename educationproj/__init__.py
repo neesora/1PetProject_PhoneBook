@@ -34,14 +34,9 @@ def delete_contact():
 
 def main():
     while True:
-        print("Phone book") #make \n for pretty code
-        print("-------------------------")
-        print("Write 1 to add new contact.")
-        print("Write 2 to modify exist contact.")
-        print("Write 3 to delete contact.")
-        print("Write 4 to show contacts.")
-        print("Write 5 to stop running.")
-        print("-------------------------")
+        print("Phone book\n-------------------------") 
+        print("Write 1 to add new contact.\nWrite 2 to modify exist contact.\nWrite 3 to delete contact.")
+        print("Write 4 to show contacts.\nWrite 5 to stop running.\n-------------------------")
         choice = input("Enter choice: ")
         if choice == "1":
             add_contact()
