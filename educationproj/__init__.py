@@ -24,13 +24,13 @@ def modify_contact():
         modifying["Nickname"] = nickname
     if number:
         modifying["Number"] = number
+
 def delete_contact():
     name = input("Write the exist name of contact which will delete: ")
     if name in phone_book:
         del phone_book[name]
     else:
         print("Contact was not found")
-
 
 def main():
     while True:
